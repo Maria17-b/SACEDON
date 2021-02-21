@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>EMD SACEDON</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--CSS EDITADO MIO-->
+  <link href="estilopagina.css" rel="stylesheet">
+  <!--FIN CSS-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!--ICONO PAGINA-->
+  <link rel="shortcut icon" type="imagen/x-icon" href="https://pbs.twimg.com/profile_images/659488701123284992/epoa-cbR.jpg">
+</head>
+<body>
+  <a href="javascript:void(0);" id="scroll" title="Scroll to Top" style="display: none;">Top<span></span></a>
+<!--MENU DESPLEGABLE-->
+<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <!--PESTAÑA NOTICIAS-->
+      <li class="nav-item">
+      <a class="nav-link" href="NOTICIAS.html" target="blank">NOTICIAS</a>  
+      </li>
+      <!--PESTAÑA PARTIDOS-->
+      <li class="nav-item">
+      <a class="nav-link" href="file:///C:/Users/Dell/Documents/PAGINA_BOOTSTRAP/PARTIDOS.html" target="blank">PARTIDOS</a>
+      </li>
+      <!--PESTAÑA PLANTILLA-->
+      <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">PLANTILLA</a>
+      <!--SUBMENU PLANTILLA-->
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="PORTEROS.html" target="blank">PORTEROS</a>
+        <a class="dropdown-item" href="ALAS.html" target="blank">ALAS</a>
+        <a class="dropdown-item" href="PIVOTS.html" target="blank">PIVOTs</a>
+         <a class="dropdown-item" href="ALA_PIVOT.html" target="blank">ALA-PIVOT</a>
+        <a class="dropdown-item" href="CIERRES.html" target="blank">CIERRES</a>
+        <a class="dropdown-item" href="ENTRENADORES.html" target="blank">ENTRENADORES</a>
+      </div>
+      </li>
+      <!--PESTAÑA RRSS (MENÚ DESPLEGABLE II CON BOTONES)-->
+      <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="file:///C:/Users/Dell/Documents/PAGINA_BOOTSTRAP/PORTEROS.html" id="navbardrop" data-toggle="dropdown">REDES SOCIALES</a>
+      <!--SUBMENU RRSS-->
+      <div class="dropdown-menu">
+      <ul class="nav flex-column">
+      <button><a href="https://www.facebook.com/SacedonFs" target="blank" class="btn btn-outline-primary">Facebook <img class="img-fluid" style="height:20px; width:20px; " src="IMAGS_AMARIA/facebook.png"></a></button>
+      <button><a href="https://www.instagram.com/sacedonfs/?hl=es"target="_blank" class="btn btn-outline-secondary">Instangram <img class="img-fluid" style="height:20px; width:20px; " src="IMAGS_AMARIA/instangram.png"></a></button>
+      <button><a href="https://twitter.com/SacedonFs?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"target="_blank" class="btn btn-outline-info">Twitter <img class="img-fluid" style="height:20px; width:20px; " src="IMAGS_AMARIA/twitter.png"></a></button>
+      <button><a href="https://www.youtube.com/channel/UCpov2dPvJPtas-H0lpb6aRg"target="_blank" class="btn btn-outline-danger">Youtube <img class="img-fluid" style="height:20px; width:20px; " src="IMAGS_AMARIA/youtube.png"></a></button>
+      </ul>
+      </div>
+    </li> <!--FIN PESTAÑA RRSS-->
+    <!--PESTAÑA TIENDA-->
+    <li class="nav-item">
+      <a class="nav-link" href="TIENDA.html" target="blank">TIENDA</a>  
+    </li>
+    </ul> <!--CIERRE LISTA BARRA-->
+  </div>  
+</nav><!--FIN MENU DESPLEGABLE-->
+
+<!--CABECERA-->
+<div align="center"> 
+  <img class="img-fluid" style="height:100px; width:1300px; " src="IMAGS_AMARIA/escudo.png"> 
+  </div>
+
+<!--CUERPO DE LA PÁGINA-->
+<div class="row"> <!--Agrupamos las 3 cajas en un mismo div-->
+  
+  <!--CAJA IZQUIERDA-->
+    <div class="col-lg-3 col-md-2 col-sm-0 d-none d-md-block" style="background:transparent;">
+      <img class="img-fluid" style="height:500px; width:1200px; " src="IMAGS_AMARIA/patrocinadores.jpg"> 
+    </div>
+    
+    <!--CAJA CENTRAL-->
+   <div class="col-lg-6 col-md-8 col-sm-1md" style="background:transparent;" >
+    
+    <!--CARRUSEL-->
+    <div id="demo" class="carousel slide" data-ride="carousel">
+    
+      <!-- Indicaciones del carrusel-->
+    <ul class="carousel-indicators">
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+        <li data-target="#demo" data-slide-to="2"></li>
+      </ul>
+  
+  <!-- Diapositivas (3 imágenes) -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+          <img class="img-fluid" src="IMAGS_AMARIA/equipocopa.jpg" alt="EQUIPO" style="width:850px;height:500px" >
+      </div>
+      <div class="carousel-item">
+          <img class="img-fluid" src="IMAGS_AMARIA/equipofirmas.jpg" alt="FIRMAS"  style="width:850px;height:500px">
+      </div>
+      <div class="carousel-item">
+          <img class="img-fluid" src="IMAGS_AMARIA/emdsacedon.jpg" alt="FINAL"  style="width:850px;height:500px">
+      </div>
+    </div>
+  
+    <!-- Controles de movimiento (izq y drch) -->
+      <a class="carousel-control-prev" href="#demo" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#demo" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+  </div>
+    </div>
+  <!--CAJA IZQUIERDA-->
+  <div class="col-lg-3 col-md-2 col-sm-0 d-none d-sm-block" style="background:transparent;">
+    <div class="tabla">
+    <!--TABLA CLASIFICACIÓN-->
+    <table class="table table-striped clasificacion-home">
+    <div class="p1">
+    <p1 > Clasificación</p1>
+      <tbody>  
+        <thead>
+          <tr>
+            <th scope="row" >1</th>
+            <th scope="row" >Bargas CD Roberto Cristoba</th>
+          <td >25</td>
+          </tr>
+
+          <tr>
+            <th scope="row" >2</th>
+            <th scope="row" >Caceres Universidad</th>
+            <td >21</td>
+          </tr>
+
+          <tr>
+            <th scope="row" >3</th>
+            <th scope="row" >Navalmoral FS</th>
+            <td >19</td>
+          </tr>
+
+          <tr>
+            <th scope="row" >4</th>
+            <th scope="row" >Ciudad de Alcorcon Futsal</th>
+            <td >19</td>
+          </tr>
+
+          <tr>
+            <th scope="row" >5</th>
+            <th scope="row" >Cobisa FS</th>
+            <td >16</td>
+          </tr>
+
+          <tr>
+            <th scope="row" >6</th>
+            <th scope="row" >EFS Colmenar Viejo Futsal</th>
+            <td >10</td>
+          </tr>
+
+          <tr>
+            <th scope="row" >7</th>
+            <th scope="row" >Colegio San José A</th>
+            <td >9</td>
+          </tr>
+
+          <tr>
+            <th scope="row" >8</th>
+            <th scope="row" >Torrejón Sala Five-Play</th>
+            <td >8</td>
+          </tr>
+
+          <tr>
+            <th scope="row" >9</th>
+            <th scope="row" >Sacedón</th>
+            <td >7</td>
+          </tr>
+
+          <tr>
+            <th scope="row" >10</th>
+            <th scope="row" >AD Madroñera Futsal</th>
+            <td >6</td>
+          </tr>
+          </thead>
+        </tbody>
+    </table>
+      </div>
+    </div>
+
+<!--FOOTER-->
+<div class="footer"> 
+  <p>Copyright &copy; 2021 Maria Esteban </p> 
+</div>
+</body>
+</html>
