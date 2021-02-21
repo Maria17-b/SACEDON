@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>NOTICIAS</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!--ICONO PAGINA-->
+  <link rel="shortcut icon" type="imagen/x-icon" href="https://pbs.twimg.com/profile_images/659488701123284992/epoa-cbR.jpg">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script type='text/javascript'>
+
+$(document).ready(function(){ 
+    $(window).scroll(function(){ 
+        if ($(this).scrollTop() > 100) { 
+            $('#scroll').fadeIn(); 
+        } else { 
+            $('#scroll').fadeOut(); 
+        } 
+    }); 
+    $('#scroll').click(function(){ 
+        $("html, body").animate({ scrollTop: 0 }, 600); 
+        return false; 
+    }); 
+});
+</script>
+<style type="text/css">
+/* BackToTop button css */
+#scroll {
+    position:fixed;
+    right:10px;
+    bottom:10px;
+    cursor:pointer;
+    width:50px;
+    height:50px;
+    background-color:#C9FFC9;
+    text-indent:-9999px;
+    display:none;
+    -webkit-border-radius:60px;
+    -moz-border-radius:60px;
+    border-radius:60px
+}
+#scroll span {
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-left:-8px;
+    margin-top:-12px;
+    height:0;
+    width:0;
+    border:8px solid transparent;
+    border-bottom-color:#ffffff
+}
+#scroll:hover {
+    background-color:#C9E4FF;
+    opacity:1;filter:"alpha(opacity=100)";
+    -ms-filter:"alpha(opacity=100)";
+}
+  <style>
+  body {
+      position: relative; 
+  }
+  </style>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+  <a href="javascript:void(0);" id="scroll" title="Scroll to Top" style="display: none;">Top<span></span></a>
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+  <ul class="navbar-nav">
+    <!--DEPLEGABLE NOTICIAS PARTIDOS-->
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">PARTIDOS</a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#section11">NAVALMORAL-SACEDON</a>
+        <a class="dropdown-item"href="#section12">TORREJON-SACEDON</a>
+        <a class="dropdown-item" href="#section13">SACEDON-COLMENAR</a>
+      </div>
+    </li>
+    <!--DEPLEGABLE NOTICIAS FICHAJES-->
+     <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">FICHAJES</a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#section21">ANDRÉS DARÍO</a>
+        <a class="dropdown-item"href="#section22">JAVIER SANCHEZ</a>
+      </div>
+    </li>
+
+    <!--DEPLEGABLE NOTICIAS PREMIOS-->
+     <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">PREMIOS</a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#section31">PREMIO NUEVA ALCARRIA</a>
+      </div>
+    </li>
+  </ul>
+</div>
+</nav>
+<!--NOTICIA PARTIDO I-->
+<div id="section11" class="container-fluid bg-success" style="padding-top:70px;padding-bottom:70px">
+   <h1 style="text-align: center;">Un mal arranque condena al Sacedón</h1>
+   <small>14/02/2021</small>
+   <p>Los ribereños no pudieron reponerse al 4-1 que reflejaba el marcador a los 5´ de partido (5-2).</p>
+  <p>El Sacedón visitaba esta jornada a uno de los mejores equipos del grupo. El equipo ribereño no entró bien al partido, dio muchas facilidades al rival, y a los 20 segundos llegó el primer gol local. El segundo llegó a los dos minutos, pero Raúl acortó distancias y Javi estuvo cerca de lograr el empate. Sin embargo los dos siguientes ataques del Navalmoral fueron gol, colocando el 4-1. Los locales hacían gala de su gran eficacia aprovechando las concesiones del Sacedón.</p>
+  <p>Desde ese momento hasta el final de la primera parte los de Sacedón igualaron el partido, compitiendo a un Navalmoral que pese a ello fue capaz de mantener la renta.</p>
+  <p>La segunda mitad comenzó con gol del Sacedón. Parecía que los ribereños se metían en el partido, pero esa sensación duró unos pocos minutos. El Navalmoral comenzó a dominar de nuevo el juego y fruto de eso llegó el quinto y definitivo tanto. El Sacedón dispuso de varias oportunidades, con cuatro postes en el partido, pero de nuevo estuvo desafortunado de cara a gol. Los últimos minutos con portero jugador tampoco dieron el resultado deseado y el Sacedón apenas creó peligro.</p>
+  <p>Sin tiempo para lamentaciones, el Sacedón recibe la próxima semana al líder del grupo con la intención de dar la campanada. </p>
+  <div align="center">
+    <img class="img-fluid" style="height:300px; width:500px;" src="IMAGS_AMARIA/noticia3.jpg"> 
+  </div>
+</div>
+<!--NOTICIA PARTIDO II-->
+<div id="section12" class="container-fluid bg-warning" style="padding-top:70px;padding-bottom:70px">
+  <h1 style="text-align: center;">El Sacedón cae pese a ir por delante casi todo el partido</h1>
+   <small>31/01/2021 </small>
+  <p>Los ribereños fueron ganando hasta en cuatro ocasiones pero no supieron sacar nada positivo de su visita al Torrejeón (6-4).</p>
+  <p>El Sacedón visitaba al Torrejón en un partido clave en la zona baja del grupo. De ganar, el Sacedón habría dejado muy tocado al equipo madrileño, colista antes del inicio del partido.</p>
+  <p>El choque no pudo comenzar mejor para los visitantes, y es que dos goles obra de Rubén y Dani los ponían en ventaja en el marcador, algo que venían deseando tener durante la temporada. Pero no supieron mantener la renta hasta el final de la primera mitad,  y el Torrejón igualó el partido rapidamente e incluso se pudo ir con ventaja a los vestuarios.</p>
+  <p>La segunda mitad también comenzó con dominio del Sacedón, que se ponía con ventaja con el primer gol de Bonacho en el equipo, pero por cada gol del Sacedón se sucedía otro de lTorrejón. Los locales no se vinieron abajo en ningún momento y tuvieron su premio final. Viñas de nuevo adelantaba a los ribereños, por cuarta vez en el partido el Sacedón se adelantaba en el marcador, pero la ventaja solo duró dos minutos. Se llegó a los últimos diez minutos con empate a 4, cualquiera se lo podía llevar. Una contra del Torrejón con un disparo desde un lateral acababa en gol y ponía por delante a los locales. A pesar de tque el Sacedón tuvo ocasiones para conseguir el empate, este no llegó, y con portero jugador y trás un robo en la circulación, los de Torrejón consiguieron el sexto y definitivo tanto.</p>
+  <p>Dura derrota de un Sacedónque debe reponerse ante rápido para competir ante un buen rival, el Cobisa, el próximo fin de semana en casa. </p>
+  <div align="center">
+    <img class="img-fluid" style="height:300px; width:500px;" src="IMAGS_AMARIA/noticia2.jpg"> 
+  </div>
+</div>
+<!--NOTICIA PARTIDO III-->
+<div id="section13" class="container-fluid bg-secondary" style="padding-top:70px;padding-bottom:70px">
+ <h1 style="text-align: center;">Un Sacedón fallón cayó derrotado por un gol en el último segundo</h1>
+ <small>24/01/2021</small>
+  <p>El conjunto ribereño fue superior al Colmenar pero no estuvo acertado de cara a gol (2-3).</p>
+  <p>Solo 1.4 segundos faltaban para el final cuando el Colmenar consiguió la victoria tras un saque de banda desde el centro del campo que fue peinado a gol en la visita al Sacedón. Hasta ese momento, el partido tuvo un claro dominio del Sacedón que consiguió ventaja en el primer minuto de juego pero que no supo ampliar su el marcador a pesar de contar con al menos 4 ocasiones claras de gol.</p>
+  <p>Quien si supo aprovechar la suya fue el Colmena, que conseguía el empate mediada la primera parte y poco después, en una jugada de estrategia, lograba el segundo tanto. Los de Sacedón iban por debajo por la falta de puntería de cara a gol. </p>
+  <p>El final de la primera parte no tuvo una historia distinta. Dominio de Sacedón, destellos del Colmenar y ocasiones falladas por parte de los locales que no pudieron lograr el empate antes de llegar al descanso.</p>
+  <p>La segunda parte fue muy similar a la primera. Las ocasiones se sucedían por parte local pero unas veces el portero y otras veces la falta de acierto hacían que no se moviese el marcador. A falta de un minuto y con portero jugador, Israel marcó el ansiado y merecido empate para los ribereños.</p>
+  <b>Injusto final</b>
+  <p>Parecía que por fin tenían premio los de Sacedón, pero no fue así. En un último minuto en el que ninguno de los dos equipos dominó el juego, un saque de banda desde el centro del campo dio lugar al gol visitante  que a la postre acabó decidiendo un partido que se le escapó al Sacedón por la falta de puntería. Ambos equipos jugaron un partido de poder a poder en una pista que contaba con zonas impracticables para este nivel provocado por la humedad del ambiente. </p>
+  <p>Por el Sacedón es destacable el debut de Mario Bonacho, pívot briocense que se incorpora al equipo con la función de ayudar en la definición, en busca de goles, la principal carencia del equipo.</p>
+  <div align="center">
+    <img class="img-fluid" style="height:300px; width:500px;" src="IMAGS_AMARIA/noticia1.jpg"> 
+  </div>
+</div>
+
+<!--NOTICIA PREMIOS-->
+<div id="section31" class="container-fluid bg-info" style="padding-top:70px;padding-bottom:70px">
+ <h1 style="text-align: center;">La EMD SACEDÓN recoge el premio Nueva Alcarria a las <b> Mejores Escuelas Deportivas 2019</b></h1>
+ <small>10/12/2020</small>
+  <p>En un acto íntimo, con todas las medidas de seguridad, la concejal de Deportes Alicia Guitart acompañó al director de las Escuelas Deportivas Ismael Sanz y a una representación de alumnos a la recogida del premio en el Teatro Buero Vallejo. El galardón, concedido en el primer trimestre de 2020, iba a haberse entregado en marzo del año pasado, pero el confinamiento obligó a retrasar la ceremonia.</p>
+  <p>El veterano periódico alcarreño premia así la trayectoria y el trabajo de unas escuelas deportivas que son motivo de orgullo para Sacedón, con más de 150 alumnos, casi un diez por ciento de la población y más del setenta por ciento de los niños y niñas de la localidad inscritos en ellas. Una apuesta por el Deporte y por la Juventud que la concejal ratifica "con la mayor satisfacción y orgullo". Para Guitart, "son fruto del trabajo bien hecho y del esfuerzo de sus responsables y entrenadores, con Isma a la cabeza".</p>
+  <p>El alcalde, Francisco Pérez Torrecilla, que no pudo acudir al acto, quiso agradecer también "al periódico Nueva Alcarria el reconocimiento y a los niños y niñas que cada año nutren nuestras escuelas, empujando con su ilusión el motor del deporte sacedonero". Pérez Torrecilla valoró también "el importante papel del deporte de base en la indetidad como pueblo y en la consiguiente lucha contra la despoblación; porque además de ofrecer una alternativa de ocio, generan un sentimiento que enraiza a los jóvenes con su municipio".</p>
+  <p>Para poder ver la gala de entrega de premios, puedes verla en el siguiente enlace: <a href="https://nuevaalcarria.com/articulos/xxxii-gala-de-los-premios-populares-de-nueva-alcarria">XXXII GALA DE LOS PREMIOS POPULARES DE NUEVA ALCARRIA</a></p>
+  <div align="center">
+    <img class="img-fluid" style="height:300px; width:500px;" src="IMAGS_AMARIA/premio.jpg"> 
+  </div>
+</div>
+<i> Noticias publicadas por: <a href="https://nuevaalcarria.com/">Nueva Alcarria</a></i>
+</body>
+</html>
