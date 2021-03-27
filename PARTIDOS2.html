@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>PARTIDOS PLAY-OFF</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="main.css" rel="stylesheet">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!--ICONO PAGINA-->
+  <link rel="shortcut icon" type="imagen/x-icon" href="https://pbs.twimg.com/profile_images/659488701123284992/epoa-cbR.jpg">
+  <!--BOTON SUBIR AL INICIO-->
+<script type='text/javascript'>
+
+$(document).ready(function(){ 
+    $(window).scroll(function(){ 
+        if ($(this).scrollTop() > 100) { 
+            $('#scroll').fadeIn(); 
+        } else { 
+            $('#scroll').fadeOut(); 
+        } 
+    }); 
+    $('#scroll').click(function(){ 
+        $("html, body").animate({ scrollTop: 0 }, 600); 
+        return false; 
+    }); 
+});
+</script>
+<style type="text/css">
+/* BackToTop button css */
+#scroll {
+    position:fixed;
+    right:10px;
+    bottom:10px;
+    cursor:pointer;
+    width:50px;
+    height:50px;
+    background-color:#C9FFC9;
+    text-indent:-9999px;
+    display:none;
+    -webkit-border-radius:60px;
+    -moz-border-radius:60px;
+    border-radius:60px
+}
+#scroll span {
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-left:-8px;
+    margin-top:-12px;
+    height:0;
+    width:0;
+    border:8px solid transparent;
+    border-bottom-color:#ffffff
+}
+#scroll:hover {
+    background-color:#C9E4FF;
+    opacity:1;filter:"alpha(opacity=100)";
+    -ms-filter:"alpha(opacity=100)";
+}
+/*FIN BOTON SUBIR INICIO*/
+</style>
+</head>
+
+<body>
+<!--BOTON SUBIR ARRIBA-->
+<a href="javascript:void(0);" id="scroll" title="Scroll to Top" style="display: none;">Top<span></span></a>
+<!--MENU DESPLEGABLE-->
+<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <!--PESTAÑA NOTICIAS-->
+      <li class="nav-item">
+      <a class="nav-link" href="NOTICIAS.html" target="blank">NOTICIAS</a>  
+      </li>
+      <!--PESTAÑA PARTIDOS-->
+      <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">PARTIDOS</a>
+      <!--SUBMENU PARTIDOS-->
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="PARTIDOS.html" target="blank">CALENDARIO</a>
+        <a class="dropdown-item" href="CLASIFICACION.html" target="blank">CLASIFICACIÓN</a>
+        <a class="dropdown-item" href="#">CALENDARIO PLAY-OFF</a>
+        <a class="dropdown-item" href="CLASIFICACION2.html" target="blank">CLASIFICACIÓN PLAY-OFF</a>
+      </div>
+      </li>
+      <!--PESTAÑA PLANTILLA-->
+      <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">PLANTILLA</a>
+      <!--SUBMENU PLANTILLA-->
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="PORTEROS.html" target="blank">PORTEROS</a>
+        <a class="dropdown-item" href="ALAS.html" target="blank">ALAS</a>
+        <a class="dropdown-item" href="PIVOTS.html" target="blank">PIVOTs</a>
+         <a class="dropdown-item" href="ALA_PIVOT.html" target="blank">ALA-PIVOT</a>
+        <a class="dropdown-item" href="CIERRES.html" target="blank">CIERRES</a>
+        <a class="dropdown-item" href="ENTRENADORES.html" target="blank">ENTRENADORES</a>
+      </div>
+      </li>
+      <!--PESTAÑA RRSS (MENÚ DESPLEGABLE II CON BOTONES)-->
+      <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="file:///C:/Users/Dell/Documents/PAGINA_BOOTSTRAP/PORTEROS.html" id="navbardrop" data-toggle="dropdown">REDES SOCIALES</a>
+      <!--SUBMENU RRSS-->
+      <div class="dropdown-menu">
+      <ul class="nav flex-column">
+      <a href="https://www.facebook.com/SacedonFs" target="blank" class="btn btn-outline-primary">Facebook <img class="img-fluid" style="height:20px; width:20px; " src="IMAGS_AMARIA/facebook.png"></a>
+      <a href="https://www.instagram.com/sacedonfs/?hl=es"target="_blank" class="btn btn-outline-secondary">Instangram <img class="img-fluid" style="height:20px; width:20px; " src="IMAGS_AMARIA/instangram.png"></a>
+     <a href="https://twitter.com/SacedonFs?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"target="_blank" class="btn btn-outline-info">Twitter <img class="img-fluid" style="height:20px; width:20px; " src="IMAGS_AMARIA/twitter.png"></a>
+      <a href="https://www.youtube.com/channel/UCpov2dPvJPtas-H0lpb6aRg"target="_blank" class="btn btn-outline-danger">Youtube <img class="img-fluid" style="height:20px; width:20px; " src="IMAGS_AMARIA/youtube.png"></a>
+      </ul>
+      </div>
+    </li> <!--FIN PESTAÑA RRSS-->
+    <!--PESTAÑA TIENDA-->
+    <li class="nav-item">
+      <a class="nav-link" href="TIENDA.html" target="blank">TIENDA</a>  
+    </li>
+    </ul> <!--CIERRE LISTA BARRA-->
+  </div>  
+</nav><!--FIN MENU DESPLEGABLE-->
+<div class="container">
+   <h3 style="font-family:verdana" align="center"> PARTIDOS FUERA</h3>
+  <p>Partidos donde nuestro equipo se traslada a campo contrario.</p>
+  <div class="table-responsible">
+  <table class="table" style="background-color: #B4DFFF">
+    <thead class="thead-dark">
+       <tr>
+      <th>FECHA</th>
+      <th> JORNADA </th>
+      <th>EQUIPO 1</th>
+      <th> RESULTADO </th>
+      <th>EQUIPO 2</th>
+    </tr>
+      <tr>
+      <td>03.ABR.2021</td>
+      <td> Jornada 2 </td>
+      <td>El Álamo FS</td>
+      <td> -.-</td>
+      <td>EMD Sacedón</td>
+    </tr>
+
+    <tr>
+      <td>17.ABR.2021</td>
+      <td> Jornada 4 </td>
+      <td>Tot Cable CFS Futsal Ibi</td>
+      <td>-.-</td>
+      <td>EMD Sacedón</td>
+    </tr>     
+
+    <tr>
+      <td>01.MAY.2021</td>
+      <td> Jornada 6 </td>
+      <td>FS Silver</td>
+      <td> -.-</td>
+      <td>EMD Sacedón</td>
+    </tr> 
+
+    <tr>
+      <td>15.MAY.2021</td>
+      <td> Jornada 7 </td>
+      <td>CD Contesano Ye Faky</td>
+      <td>-.-</td>
+      <td>EMD Sacedón</td>
+    </tr> 
+
+    <tr>
+      <td>29.MAY.2021</td>
+      <td> Jornada 9 </td>
+      <td>C.D.E Mejorada</td>
+      <td>-.-</td>
+      <td>EMD Sacedón</td>
+    </tr> 
+
+    <tr>
+      <td>16.JUN.2021</td>
+      <td> Jornada 11 </td>
+      <td>Union Tres Cantos F.S</td>
+      <td>-.-</td>
+      <td>EMD Sacedón</td>
+    </tr> 
+
+    </tbody>
+  </table>
+</div>
+</div>
+</div>
+
+<div class="container">
+  <h3 style="font-family:verdana" align="center"> PARTIDOS EN CASA</h3>
+  <p>Partidos donde nuestro equipo juega en casa y la afición sube a pasar la tarde viendo a su equipo.</p>
+  <div class="table-responsible">
+  <table class="table" style="background-color:#B4DFFF ">
+    <thead class="thead-dark">
+        <tr>
+      <th>FECHA</th>
+      <th> JORNADA </th>
+      <th>EQUIPO 1</th>
+      <th> RESULTADO </th>
+      <th>EQUIPO 2</th>
+    </tr>
+    <tr>
+      <td>27.MAR.2021</td>
+      <td> Jornada 1 </td>
+      <td>EMD Sacedón</td>
+      <td>4-4</td>
+      <td>CD Contesano Ye Faky</td>
+    </tr>
+      <tr>
+      <td>10.ABR.2021</td>
+      <td> Jornada 3 </td>
+      <td>EMD Sacedón</td>
+      <td>-.-</td>
+      <td>C.D.E Mejorada</td>
+    </tr>
+
+    <tr>
+      <td>24.ABR.2021</td>
+      <td> Jornada 5 </td>
+      <td>EMD Sacedón</td>
+      <td>-.-</td>
+      <td>Union Tres Cantos F.S</td>
+    </tr>
+
+    <tr>
+      <td>22.MAY.2021</td>
+      <td> Jornada 8 </td>
+      <td>EMD Sacedón</td>
+      <td>-.-</td>
+      <td>El Álamo FS</td>
+    </tr>
+
+    <tr>
+      <td>05.JUN.2021</td>
+      <td> Jornada 10 </td>
+      <td>EMD Sacedón</td>
+      <td>-.-</td>
+      <td>Tot Cable CFS Futsal Ibi</td>
+    </tr>
+
+    <tr>
+      <td>26.JUN.2021</td>
+      <td> Jornada 12 </td>
+      <td>EMD Sacedón</td>
+      <td>-.-</td>
+      <td>FS Silver</td>
+    </tr>
+
+    </tbody>
+  </table>
+</div>
+</div>
+</div>
+</body>
+</html>
