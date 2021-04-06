@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>CLASIFICACIÓN</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--CSS EDITADO MIO-->
+  <link href="main.css" rel="stylesheet">
+  <!--FIN CSS-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!--ICONO PAGINA-->
+  <link rel="shortcut icon" type="imagen/x-icon" href="https://pbs.twimg.com/profile_images/659488701123284992/epoa-cbR.jpg">
+</head>
+<body>
+<!--MENU DESPLEGABLE-->
+<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <!--PESTAÑA NOTICIAS-->
+      <li class="nav-item">
+      <a class="nav-link" href="NOTICIAS.html" target="blank">NOTICIAS</a>  
+      </li>
+      <!--PESTAÑA PLANTILLA-->
+      <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">PARTIDOS</a>
+      <!--SUBMENU PLANTILLA-->
+      <div class="dropdown-menu">
+         <a class="dropdown-item" href="PARTIDOS.html" target="blank">CALENDARIO</a>
+        <a class="dropdown-item" href="CLASIFICACION.html">CLASIFICACIÓN</a>
+         <a class="dropdown-item" href="PARTIDOS2.html" target="blank">CALENDARIO PLAY-OFF</a>
+        <a class="dropdown-item" href="#" target="blank">CLASIFICACIÓN PLAY-OFF</a>
+      </div>
+      </li>
+      <!--PESTAÑA PLANTILLA-->
+      <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">PLANTILLA</a>
+      <!--SUBMENU PLANTILLA-->
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="PORTEROS.html" target="blank">PORTEROS</a>
+        <a class="dropdown-item" href="ALAS.html" target="blank">ALAS</a>
+        <a class="dropdown-item" href="PIVOTS.html" target="blank">PIVOTs</a>
+         <a class="dropdown-item" href="ALA_PIVOT.html" target="blank">ALA-PIVOT</a>
+        <a class="dropdown-item" href="CIERRES.html" target="blank">CIERRES</a>
+        <a class="dropdown-item" href="ENTRENADORES.html" target="blank">ENTRENADORES</a>
+      </div>
+      </li>
+      <!--PESTAÑA RRSS (MENÚ DESPLEGABLE II CON BOTONES)-->
+      <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="file:///C:/Users/Dell/Documents/PAGINA_BOOTSTRAP/PORTEROS.html" id="navbardrop" data-toggle="dropdown">REDES SOCIALES</a>
+      <!--SUBMENU RRSS-->
+      <div class="dropdown-menu">
+      <ul class="nav flex-column">
+    <a href="https://www.facebook.com/SacedonFs" target="blank" class="btn btn-outline-primary">Facebook <img class="img-fluid" style="height:20px; width:20px; " src="IMAGS_AMARIA/facebook.png"></a>
+      <a href="https://www.instagram.com/sacedonfs/?hl=es"target="_blank" class="btn btn-outline-secondary">Instangram <img class="img-fluid" style="height:20px; width:20px; " src="IMAGS_AMARIA/instangram.png"></a>
+     <a href="https://twitter.com/SacedonFs?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"target="_blank" class="btn btn-outline-info">Twitter <img class="img-fluid" style="height:20px; width:20px; " src="IMAGS_AMARIA/twitter.png"></a>
+      <a href="https://www.youtube.com/channel/UCpov2dPvJPtas-H0lpb6aRg"target="_blank" class="btn btn-outline-danger">Youtube <img class="img-fluid" style="height:20px; width:20px; " src="IMAGS_AMARIA/youtube.png"></a>
+      </ul>
+      </div>
+    </li> <!--FIN PESTAÑA RRSS-->
+    <!--PESTAÑA TIENDA-->
+    <li class="nav-item">
+      <a class="nav-link" href="TIENDA.html" target="blank">TIENDA</a>  
+    </li>
+    </ul> <!--CIERRE LISTA BARRA-->
+  </div>  
+</nav><!--FIN MENU DESPLEGABLE-->
+
+<!--COMIENZO TABLA CLASIFICACIÓN-->
+<div class="container">
+  <h3 style="font-family:verdana" align="center"> CLASIFICACIÓN ELIMINATORIA</h3>
+<div class="table-responsible">
+  <table class="table table-hover">
+    <thead>
+       <tr>
+        <th>#</th>
+        <th>Equipo</th>
+        <th>Pt</th>
+        <th>J</th>
+        <th>G</th>
+        <th>E</th>                    
+        <th>P</th>
+        <th>GF</th>
+        <th>GC</th>
+        <th>DG</th>
+      </tr>
+    </thead>
+    <tbody>
+    <!--PRIMER CLASIFICADO-->
+    <tr>
+    <td scope="row"  class="table-light">1</td>
+      <td>FS El Álamo</td>
+      <td><strong>33</strong></td>
+      <td>20</td>
+      <td>10</td>
+      <td>3</td>                      
+      <td>7</td>
+      <td>92</td>
+      <td>68</td>
+      <td>24</td>
+    </tr>
+
+    <!--SEGUNDO CLASIFICADO-->
+    <tr>
+    <td scope="row" class="table-light">2</td>
+      <td>FS Silver</td>
+      <td><strong>28</strong></td>
+      <td>20</td>
+      <td>8</td>
+      <td>4</td>                      
+      <td>8</td>
+      <td>79</td>
+      <td>73</td>
+      <td>6</td>
+    </tr>
+
+    <!--TERCER CLASIFICADO-->
+    <tr>
+    <td scope="row" class="table-light">3</td>
+      <td>CD Contesano Ye Fanky FS</td>
+      <td><strong>26</strong></td>
+      <td>20</td>
+      <td>7</td>
+      <td>5</td>                      
+      <td>8</td>
+      <td>59</td>
+      <td>72</td>
+      <td>-13</td>
+    </tr>
+
+    <!--CUARTO CLASIFICADO-->
+    <tr>
+    <td scope="row"  class="table-light">2</td>
+      <td>Moraleda Recambios Agrícolas</td>
+      <td><strong>25</strong></td>
+      <td>18</td>
+      <td>8</td>
+      <td>1</td>                      
+      <td>9</td>
+      <td>59</td>
+      <td>56</td>
+      <td>3</td>
+    </tr>
+
+    <!--QUINTO CLASIFICADO-->
+   <tr>
+    <td scope="row"  class="table-light">5</td>
+      <td>Torrejón Sala Five Play</td>
+      <td><strong>24</strong></td>
+      <td>20</td>
+      <td>6</td>
+      <td>6</td>                      
+      <td>8</td>
+      <td>70</td>
+      <td>64</td>
+      <td>6</td>
+    </tr> 
+
+    <!--SEXTO CLASIFICADO-->
+    <tr>
+    <td scope="row"  class="table-light">6</td>
+      <td>EFS Colmenar Viejo</td>
+      <td><strong>24</strong></td>
+      <td>20</td>
+      <td>7</td>
+      <td>3</td>                      
+      <td>10</td>
+      <td>71</td>
+      <td>87</td>
+      <td>-16</td>
+    </tr> 
+
+    <!--SEPTIMO CLASIFICADO-->
+    <tr>
+    <td scope="row" class="table-light">7</td>
+      <td>Unión Tres Cantos FS</td>
+      <td><strong>21</strong></td>
+      <td>20</td>
+      <td>7</td>
+      <td>0</td>                      
+      <td>13</td>
+      <td>64</td>
+      <td>91</td>
+      <td>-27</td>
+    </tr> 
+
+    <!--OCTAVO CLASIFICADO-->
+     <tr>
+    <td scope="row" class="table-light">8</td>
+      <td>CD Colegio San José</td>
+      <td><strong>19</strong></td>
+      <td>20</td>
+      <td>5</td>
+      <td>4</td>                      
+      <td>11</td>
+      <td>57</td>
+      <td>83</td>
+      <td>-26</td>
+    </tr> 
+    <!--NOVENO CLASIFICADO-->
+   <tr>
+    <td scope="row" class="table-light">9</td>
+      <td>AD Madroñera</td>
+      <td><strong>17</strong></td>
+      <td>20</td>
+      <td>4</td>
+      <td>5</td>                      
+      <td>11</td>
+      <td>54</td>
+      <td>72</td>
+      <td>-18</td>
+    </tr> 
+
+    <!--DECIMO CLASIFICADO-->
+    <tr>
+    <td scope="row" class="table-light">10</td>
+      <td>EMD SACEDON</td>
+      <td><strong>15</strong></td>
+      <td>20</td>
+      <td>4</td>
+      <td>3</td>                      
+      <td>13</td>
+      <td>50</td>
+      <td>79</td>
+      <td>-29</td>
+    </tr>             
+
+    <!--UNDECIMO CLASIFICADO-->
+    <tr>
+    <td scope="row" class="table-light">11</td>
+      <td>Tot Cable CFS Futsal Ibi</td>
+      <td><strong>13</strong></td>
+      <td>19</td>
+      <td>4</td>
+      <td>1</td>                      
+      <td>14</td>
+      <td>51</td>
+      <td>95</td>
+      <td>-44</td>
+    </tr>
+
+    <!--DUODECIMO CLASIFICADO-->
+    <tr>
+    <td scope="row" class="table-light">12</td>
+      <td>CD Mejorada</td>
+      <td><strong>9</strong></td>
+      <td>19</td>
+      <td>3</td>
+      <td>0</td>                      
+      <td>16</td>
+      <td>52</td>
+      <td>109</td>
+      <td>-57</td>
+    </tr>
+
+
+    </tbody>
+  </table>
+</div>
+</div>
+</body>
+</html>
+
